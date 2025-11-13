@@ -1,0 +1,10 @@
+from sql_connection import get_sql_engine
+from sqlalchemy import text
+
+engine = get_sql_engine()
+
+with engine.connect() as conn:
+    result = conn.execute(text("SELECT @@VERSION"))
+    print(result.fetchone())
+
+    
