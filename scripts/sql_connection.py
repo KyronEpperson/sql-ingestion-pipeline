@@ -7,7 +7,7 @@ load_dotenv()
 def get_sql_engine():
     # Use Windows Authentication
     conn_str = (
-        "mssql+pyodbc://@PLATO?"
+        "mssql+pyodbc://@DESKTOP-U6HGS39\SQLEXPRESS?"
         "driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes&database=dune_metrics"
     )
     # Or use SQL Authentication (uncomment and edit below)
